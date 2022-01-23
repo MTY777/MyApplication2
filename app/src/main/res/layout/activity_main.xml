@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/ic_dvoress"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_dvoress"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/ic_vhod"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Вход"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Добро пожаловать!"
+        android:textSize="31dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/ic_texxxt"
+        app:layout_constraintStart_toStartOf="@id/ic_texxxt"
+        app:layout_constraintEnd_toEndOf="@id/ic_texxxt"
+        android:layout_marginBottom="25dp"/>
+
+   <TextView
+       android:id="@+id/ic_textview"
+       android:layout_width="200dp"
+       android:layout_height="20dp"
+       android:text="@string/vyyyyyyyy"
+       android:textColor="@color/white"
+       android:textSize="10sp"
+       app:layout_constraintEnd_toEndOf="@id/ic_textti"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginBottom="50dp"
+       android:layout_marginEnd="50dp"
+       tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/ic_textti"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/nnnaaa"
+        android:textColor="@color/orange"
+        android:textSize="10sp"
+        android:layout_marginStart="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/ic_btnd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/voooo"
+        app:layout_constraintBottom_toTopOf="@id/ic_textview"
+        app:layout_constraintEnd_toEndOf="@id/ic_textti"
+        />
+
+        <EditText
+            android:id="@+id/tablegg"
+            android:inputType="textPassword"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toTopOf="@id/ic_btnd"
+            app:layout_constraintEnd_toEndOf="@id/ic_btnd"
+            app:layout_constraintStart_toStartOf="@id/ic_btnd"
+             android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@color/gray_white"
+            />
+
+        <EditText
+            android:id="@+id/email_text"
+            android:inputType="textEmailSubject"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Email.com"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@color/gray_white"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@id/tablegg"
+            app:layout_constraintEnd_toEndOf="@id/ic_btnd"/>
+
+    <TextView
+        android:id="@+id/ic_texxxt"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="30dp"
+        android:text="             Выполните вход"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@id/email_text"
+        app:layout_constraintEnd_toEndOf="@id/email_text"
+        app:layout_constraintStart_toStartOf="@id/email_text"/>
+
+    <TextView
+        android:id="@+id/ic_regi"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="30dp"
+        android:text="          или зарегиструйтесь"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@id/email_text"
+        app:layout_constraintTop_toBottomOf="@id/ic_texxxt"
+        app:layout_constraintEnd_toEndOf="@id/email_text"
+        app:layout_constraintStart_toStartOf="@id/email_text"
+        tools:ignore="InvalidId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
